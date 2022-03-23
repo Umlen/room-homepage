@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+/*background & menu*/
+/*text*/
+/*headings and slider buttons*/
+/*active state slider buttons*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 12px;
+  font-family: "Spartan", "Arial", sans-serif;
+  font-weight: 500;
+}
+
+header {
+  position: absolute;
+  top: 64px;
+  left: 64px;
+  z-index: 1000;
+}
+
+nav {
+  padding-left: 4.66rem;
+}
+nav a {
+  color: #FFF;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  margin-right: 2.66rem;
+}
+nav a:hover::after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  padding-top: 10px;
+  border-bottom: 2px solid #FFF;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  transform: translateX(50%);
+}
+
+footer {
+  background-color: #000;
+  color: #FFF;
+  padding: 0.5rem 0 0.5rem 0;
+  text-align: center;
+  font-size: 0.7rem;
+}
+footer a {
+  color: #FFF;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  -webkit-text-decoration: underline dotted #FFF;
+          text-decoration: underline dotted #FFF;
+}
+footer a:hover {
+  text-decoration: none;
+}
+footer a:hover::after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  padding-top: 10px;
+  border-bottom: 2px solid #FFF;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  transform: translateX(50%);
+  width: 80%;
+  transform: translateX(10%);
+  padding-top: 5px;
+  border-bottom: 1px solid #FFF;
+  top: 5px;
+}
+
+h1, h2 {
+  font-size: 3.33rem;
+  font-weight: 600;
+  letter-spacing: -0.14rem;
+  color: #000;
+}
+
+h3 {
+  font-size: 1rem;
+  letter-spacing: 0.4rem;
+  line-height: 1.83rem;
+  color: #000;
+  font-weight: 700;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text {
+  line-height: 1.66rem;
+  letter-spacing: -0.02rem;
+  color: #A0A0A0;
+}
+
+#slider-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-item {
+  flex: 0 0 100%;
+}
+
+.slider-img {
+  width: 58.33%;
+  height: auto;
+}
+
+.slider-article {
+  padding: 0 7%;
+}
+.slider-article .text {
+  padding-top: 22px;
+  padding-bottom: 32px;
+}
+
+.shop-link {
+  text-decoration: none;
+}
+.shop-link p {
+  color: #000;
+  letter-spacing: 0.83rem;
+  line-height: 1.33rem;
+  padding-right: 3.58rem;
+  float: left;
+}
+.shop-link:hover p {
+  color: #A0A0A0;
+}
+.shop-link:hover path {
+  fill: #A0A0A0;
+}
+
+.arrows-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 58.33%;
+}
+
+.arrows {
+  width: 6.66rem;
+  height: 6.66rem;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+}
+.arrows svg {
+  display: block;
+  margin: 0 auto;
+}
+.arrows:hover {
+  background-color: #454545;
+  cursor: pointer;
+}
+
+.about-article {
+  padding: 0 3.33%;
+}
+.about-article .text {
+  padding-top: 9px;
+}/*# sourceMappingURL=style.css.map */
