@@ -160,7 +160,7 @@ h3 {
 }
 
 .slider-img {
-    width: 58.33%;
+    min-width: 58.33%;
     height: auto;
 }
 
@@ -225,7 +225,7 @@ h3 {
     }
 
     .slider-img {
-        width: 100%;
+        min-width: 100%;
     }
 
     .slider-article {
