@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: ()
-- Live Site URL: ()
+- Solution URL: (https://room-homepage-gamma.vercel.app/)
+- Live Site URL: (https://github.com/Umlen/room-homepage)
 
 ## My process
 
