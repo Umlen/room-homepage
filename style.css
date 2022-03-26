@@ -21,17 +21,26 @@ header {
   z-index: 1000;
 }
 
-nav {
+#open-menu-btn {
+  position: absolute;
+  top: 4rem;
+  left: 2rem;
+}
+#open-menu-btn:hover {
+  cursor: pointer;
+}
+
+#desktop-menu {
   padding-left: 4.66rem;
 }
-nav a {
+#desktop-menu a {
   color: #FFF;
   font-weight: 600;
   text-decoration: none;
   position: relative;
   margin-right: 2.66rem;
 }
-nav a:hover::after {
+#desktop-menu a:hover::after {
   content: "";
   display: inline-block;
   width: 50%;
@@ -41,6 +50,43 @@ nav a:hover::after {
   top: 10px;
   left: 0;
   transform: translateX(50%);
+}
+
+#mobile-menu {
+  position: absolute;
+  top: 0;
+  height: 110px;
+  width: 100%;
+  z-index: 1000;
+  background-color: #FFF;
+  padding-left: 4.66rem;
+}
+#mobile-menu a {
+  color: #FFF;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  color: #000;
+  top: 4rem;
+  margin-right: 2.66rem;
+}
+#mobile-menu #close-menu-btn {
+  position: absolute;
+  top: 4rem;
+  left: 2.16rem;
+}
+#mobile-menu #close-menu-btn:hover {
+  cursor: pointer;
+}
+
+.blackout-mobile {
+  position: absolute;
+  top: 110px;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  opacity: 70%;
+  z-index: 999;
 }
 
 footer {
@@ -91,6 +137,10 @@ h3 {
   line-height: 1.83rem;
   color: #000;
   font-weight: 700;
+}
+
+.hide {
+  display: none;
 }
 
 .flex-container {
@@ -144,7 +194,7 @@ h3 {
   fill: #A0A0A0;
 }
 
-.arrows-wrapper {
+#arrows-wrapper {
   position: absolute;
   bottom: 0;
   left: 58.33%;
@@ -171,4 +221,57 @@ h3 {
 }
 .about-article .text {
   padding-top: 9px;
+}
+
+@media (max-width: 375px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .slider-img {
+    width: 100%;
+  }
+
+  .slider-article {
+    padding: 72px 32px;
+  }
+  .slider-article .text {
+    padding-top: 19px;
+    padding-bottom: 52px;
+  }
+
+  #slider, #arrows-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #arrows-wrapper {
+    left: auto;
+    right: 0;
+  }
+
+  .arrows {
+    width: 4.66rem;
+    height: 4.66rem;
+  }
+
+  #about img {
+    width: 100%;
+  }
+
+  .about-article {
+    padding: 56px 32px;
+  }
+
+  header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+  }
+
+  #logo {
+    padding-top: 4rem;
+  }
 }/*# sourceMappingURL=style.css.map */
