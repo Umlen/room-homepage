@@ -236,12 +236,15 @@ h3 {
         }   
     }
 
-    #slider, #arrows-wrapper {
+    #slider {
         display: flex;
         flex-direction: row;
+        align-items: stretch;
     }
 
     #arrows-wrapper {
+        display: flex;
+        flex-direction: row;
         left: auto;
         right: 0;
     }
